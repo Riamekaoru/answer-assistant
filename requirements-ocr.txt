@@ -1,0 +1,14 @@
+# 答题助手 · OCR 引擎依赖
+#
+# 两个引擎都装是最稳的组合：
+#   paddleocr  识别精度最高（中英混排题干优势明显）
+#   rapidocr   同源 PP-OCR 模型的 ONNX 版，安装体积小、纯 CPU 友好
+# 程序会按 ocr_engine 配置自动选择，失败时自动降级到另一个。
+#
+# 如果只想装一个：
+#   轻量方案  pip install rapidocr
+#   精度方案  pip install paddlepaddle==3.3.1 paddleocr
+
+paddlepaddle==3.3.1
+paddleocr>=3.0
+rapidocr>=3.0

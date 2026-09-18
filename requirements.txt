@@ -1,0 +1,18 @@
+# 答题助手 · 核心依赖（不含 OCR 引擎，见 requirements-ocr.txt）
+#
+# 说明：opencv 由 OCR 引擎包自动引入（paddleocr -> opencv-contrib-python，
+# rapidocr -> opencv-python）。这里显式声明 headless 版作为兜底，
+# 以便在「关闭 OCR」模式下图像预处理依然可用。
+
+numpy>=1.24
+opencv-python-headless>=4.8
+Pillow>=10.0
+mss>=9.0
+rapidfuzz>=3.0
+python-docx>=1.1
+olefile>=0.47
+openpyxl>=3.1
+pandas>=2.0
+keyboard>=0.13.5
+pyperclip>=1.8
+requests>=2.31

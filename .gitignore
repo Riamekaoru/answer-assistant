@@ -1,0 +1,25 @@
+# 忽略运行时产物
+.venv/
+.venv_old/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+logs/
+
+# 本地数据：真实题库 / 用户配置 / 自检样本，一律不入库
+data/config.json
+data/samples/
+data/local/
+
+# 便携运行时由 install.bat 自动获取，不要提交
+runtime/
+
+# 打包中间产物
+*.spec.bak
+*.toc
+.wheels_tmp/
+
+# 打包输出（几百 MB，不入库）
+dist_package/
